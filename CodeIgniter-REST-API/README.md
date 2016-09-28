@@ -15,22 +15,18 @@ You have to just downlload the CodeIgniter-REST-API folder from github and uploa
 
  
 This allows you to implement a RESTful interface easily:
-
+```php
 class Users extends REST_Controller
-
 {
-
   public function users_get($id)
-  
   {
-  
-    // Display a single Users
+     // Display a single Users
   }
-
   public function users_post()
   {
     // Create a new user
   }
+  
  public function users_list()
   {
     // Create all users
@@ -45,7 +41,7 @@ class Users extends REST_Controller
   }
 
 }
- 
+ ```
 
 'REST_Controller' also supports `PUT` and `DELETE` methods, allowing you to support a truly RESTful interface.
 HTTP Response can be in JSON format or in XML format.
