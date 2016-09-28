@@ -1,70 +1,49 @@
-###################
-What is CodeIgniter
-###################
+# CodeIgniter REST API 
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+You can find a full REST API implementation using Key Design Principles of REST.  
 
-*******************
-Release Information
-*******************
+## Requirements
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+1. PHP 5.4 or greater
+2. CodeIgniter 3.0+
 
-**************************
-Changelog and New Features
-**************************
+## Installation Guidelines
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+You have to just downlload the CodeIgniter-REST-API folder from github and upload it on your server.
 
-*******************
-Server Requirements
-*******************
+## Handling Requests
 
-PHP version 5.6 or newer is recommended.
+ 
+This allows you to implement a RESTful interface easily:
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+class Users extends REST_Controller
+{
+  public function users_get($id)
+  {
+    // Display a single Users
+  }
 
-************
-Installation
-************
+  public function users_post()
+  {
+    // Create a new user
+  }
+ public function users_list()
+  {
+    // Create all users
+  }
+  public function users_delete()
+  {
+    // delete a user
+  }
+  public function users_put($id)
+  {
+    // Update a user
+  }
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+}
+ 
 
-*******
-License
-*******
+'REST_Controller' also supports `PUT` and `DELETE` methods, allowing you to support a truly RESTful interface.
+HTTP Response can be in JSON format or in XML format.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community IRC <https://webchat.freenode.net/?channels=%23codeigniter>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Any responses you make from the class (see [responses](#responses) for more on this) will be serialised in the designated format.
