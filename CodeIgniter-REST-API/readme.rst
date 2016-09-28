@@ -1,4 +1,4 @@
-# CodeIgniter REST API 
+<b># CodeIgniter REST API </b>
 
 You can find a full REST API implementation using Key Design Principles of REST.  
 
