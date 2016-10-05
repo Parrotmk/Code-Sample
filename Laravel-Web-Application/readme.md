@@ -35,7 +35,7 @@ Controller code to get All users from database
  ```
 
 
- ## Model  
+## Model  
  To get All users from database we write the code into controller
  
  ```php
@@ -65,7 +65,7 @@ We also used some query building tools to write the mysql query
  
  ```
  
- ## View
+## View
  
   ```php  
  @foreach ($users as $user)
