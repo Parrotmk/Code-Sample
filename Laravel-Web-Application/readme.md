@@ -36,18 +36,8 @@ Controller code to get All users from database
 
 
 ## Model  
- To get All users from database we write the code into controller
  
- ```php
-  public function index()
-    {
-		/* Throught Model */
-		$users = User::getUsers(); 
-        return view('home',['users'=>$users]);
-    }
- ```
-   
-This controller call  the 'User' Model in application
+This above controller call  the 'User' Model in application
 
  ```php  
   public static function getUsers()
