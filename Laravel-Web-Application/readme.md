@@ -34,26 +34,22 @@ Route::get('/home/{id}', 'HomeController@destroy');
 		$users = User::getUsers(); 
         return view('home',['users'=>$users]);
     }
-   ```
+ ```
    
 This controller call  the 'User' Model in application
+
  ```php  
   public static function getUsers()
 	{
 		$users = self::all();
 		return $users ;
 	}	
-     ```
+	
+ ```
      
 We also used some query building tools to write the mysql query
- ```php  	DB::table('users')->where('id', '=', $id)->delete();      ```
- 
- 
-  
-  
 
-   
-   
+ ```php  
+ DB::table('users')->where('id', '=', $id)->delete();     
  
- 
- 
+ ```
