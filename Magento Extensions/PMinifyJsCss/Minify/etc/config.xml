@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   PMinifyJsCss
+ * @package    PMinifyJsCss_Minify
+ * @author     PMinifyJsCss
+ * @copyright  Copyright (c) 2015 PMinifyJsCss (http://www.PMinifyJsCss.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <PMinifyJsCss_Minify>
+            <version>1.5.0</version>
+        </PMinifyJsCss_Minify>
+    </modules>
+    <global>
+        <helpers>
+            <PMinifyJsCss_minify>
+                <class>PMinifyJsCss_Minify_Helper</class>
+            </PMinifyJsCss_minify>
+        </helpers>
+		<models>		
+			<PMinifyJsCss_minify>
+				<class>PMinifyJsCss_Minify_Model</class>
+			</PMinifyJsCss_minify>  		
+		</models>
+		<blocks>
+			<PMinifyJsCss_minify>
+				<class>PMinifyJsCss_Minify_Block</class>
+			</PMinifyJsCss_minify>
+		</blocks>
+        <resources>
+            <PMinifyJsCss_minify_setup>
+                <setup>
+                    <module>PMinifyJsCss_Minify</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </PMinifyJsCss_minify_setup>
+        </resources>
+    </global>
+	<default>
+        <PMinifyJsCss_minify>
+            <minify_html>
+                <enabled>0</enabled>
+                <max_minification>0</max_minification>
+                <compatibility>0</compatibility>
+            </minify_html>
+            <minify_css_js>
+                <remove_comments>0</remove_comments>
+            </minify_css_js>
+        </PMinifyJsCss_minify>
+    </default>
+    <frontend>
+        <events>
+            <core_block_abstract_to_html_after>
+	            <observers>
+	                <PMinifyJsCss_minify_core_block_abstract_to_html_after>
+	                    <class>PMinifyJsCss_minify/observer</class>
+	                    <method>minifyBlockHtml</method>
+	                </PMinifyJsCss_minify_core_block_abstract_to_html_after>
+	            </observers>
+            </core_block_abstract_to_html_after>
+            <controller_action_postdispatch>
+                <observers>
+                    <PMinifyJsCss_minify_controller_action_postdispatch>
+                        <class>PMinifyJsCss_minify/observer</class>
+                        <method>minifyPageHtml</method>
+                    </PMinifyJsCss_minify_controller_action_postdispatch>
+                </observers>
+            </controller_action_postdispatch>
+        </events>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <PMinifyJsCss_minify after="Mage_Adminhtml">PMinifyJsCss_Minify_Adminhtml</PMinifyJsCss_minify>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <PMinifyJsCss_info>
+                                            <title>Info</title>
+                                        </PMinifyJsCss_info>
+                                        <PMinifyJsCss_minify>
+                                            <title>Minify HTML CSS JS</title>
+                                        </PMinifyJsCss_minify>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <PMinifyJsCss_Minify>
+                    <files>
+                        <default>PMinifyJsCss_Minify.csv</default>
+                    </files>
+                </PMinifyJsCss_Minify>
+            </modules>
+        </translate>
+    </adminhtml>
+    <crontab>
+        <jobs>
+            <PMinifyJsCss_minify_check>
+                <schedule>
+                   <cron_expr>55 5 */15 * *</cron_expr>
+                </schedule>
+                <run>
+                   <model>PMinifyJsCss_minify/cron::check</model>
+                </run>
+            </PMinifyJsCss_minify_check>
+        </jobs>
+    </crontab>
+</config>
