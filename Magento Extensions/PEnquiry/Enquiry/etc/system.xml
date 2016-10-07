@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<config>
+	  <tabs>
+		<sstech translate="label" module="enquiry">
+            <label>SSTech</label>
+            <sort_order>0</sort_order>
+        </sstech>
+	  </tabs>
+	  <sections>
+		<enquiries  translate="label" module="enquiry">                    
+		<label>Quick Enquiry</label>
+		<tab>sstech</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <settings translate="label"> 
+					  <label>Settings</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				        <fields>
+                          <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>settings to enable and disable the Top links</comment>
+                          </enabled>
+                          <sendername translate="label">
+                            <label>Sender Name</label>
+                            <frontend_type>Text</frontend_type>                       
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Name of the sender </comment>
+                          </sendername>
+						   <senderemail translate="label">
+                            <label>Sender Email</label>
+                            <frontend_type>Text</frontend_type>                       
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Email id of Sender</comment>
+                          </senderemail>
+					   </fields>
+					   </settings>
+					</groups>
+		</enquiries>
+	  </sections>
+</config>
