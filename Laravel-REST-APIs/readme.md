@@ -11,11 +11,17 @@ After connecting application to database run this command to migrate tables:
 Run the command in console to start server: `php artisan serve`
 
 Now you can call the APIs with URLs. for examples
+
 1. http://localhost:8000/api/user - GET Method - GET ALL Users
+
 2. http://localhost:8000/api/user/4 - GET Method - GET a particular user
+
 3. http://localhost:8000/api/user/4  - DELETE Method - Delete a user
-3. http://localhost:8000/api/user/4  - PUT Method - update a user
-3. http://localhost:8000/api/user  - POST Method - Add a user
+
+4. http://localhost:8000/api/user/4  - PUT Method - update a user
+
+5. http://localhost:8000/api/user  - POST Method - Add a user
+
 
 ROUTING CODE for GET
 
