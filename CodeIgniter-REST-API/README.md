@@ -15,6 +15,7 @@ You have to just downlload the CodeIgniter-REST-API folder from github and uploa
 
  
 This allows you to implement a RESTful interface easily:
+
 ```php
 class Users extends REST_Controller
 {
