@@ -8,15 +8,27 @@ In my case, We provide architectural and custom business solutions that help my 
 Our skill sets include: 
 
 >> Magento
+
 >> Wordpress
+
 >> E-Commerce
+
 >> Woocommerce
+
 >> Core PHP
+
 >> CakePHP
+
 >> Zend Framework 2
+
 >> JQuery
+
 >> Angular.Js
+
 >> MVC
+
 >> Bootstrap
+
 >> MySql
+
 >> Payment gateway (Stripe, Paypal, ANZ, Chargebee etc)
