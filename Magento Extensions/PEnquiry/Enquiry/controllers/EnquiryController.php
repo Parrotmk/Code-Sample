@@ -9,7 +9,7 @@ class PEnquiry_Enquiry_EnquiryController extends Mage_Core_Controller_Front_Acti
 							"label" => $this->__("Home Page"),
 							"title" => $this->__("Home Page"),
 							"link"  => Mage::getBaseUrl()
-					   ));
+					    ));
 
 				  $breadcrumbs->addCrumb("enquiries", array(
 							"label" => $this->__("Activate"),

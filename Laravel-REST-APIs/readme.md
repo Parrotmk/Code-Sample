@@ -8,7 +8,7 @@ After connecting application to database run this command to migrate tables:
 
 `php artisan migrate:install` This will create a migrate repository in database and you can see the tables.
 
-Run the command in console to start server: `php artisan serve`
+Run the command in console to start server: php artisan serve
 
 Now you can call the APIs with URLs. for examples
 
