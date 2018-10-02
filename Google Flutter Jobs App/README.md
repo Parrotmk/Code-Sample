@@ -1,4 +1,4 @@
-# Sample code for job application app
+# Google Flutter: Sample code for job app
 
 A new Flutter project.
 
