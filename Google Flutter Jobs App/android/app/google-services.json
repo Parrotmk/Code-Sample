@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "289861335518",
+    "firebase_url": "https://hiring-app-408b3.firebaseio.com",
+    "project_id": "hiring-app-408b3",
+    "storage_bucket": "hiring-app-408b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289861335518:android:e280066c3b009895",
+        "android_client_info": {
+          "package_name": "com.parrothunters.domesticjobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289861335518-uq74v5cuhs2ds2h225tqrk1u2h8vljp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parrothunters.domesticjobs",
+            "certificate_hash": "2c486fc6f969bd1428417419df4759fe57290f2d"
+          }
+        },
+        {
+          "client_id": "289861335518-133ms3nfbuoen6fi2ohu8nt1snme0vag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4tE6mBuDTC_TxUEHMNmXREko9FKlznGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289861335518-133ms3nfbuoen6fi2ohu8nt1snme0vag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
