@@ -1,4 +1,4 @@
-# domesticjobs
+# Sample code for job application app
 
 A new Flutter project.
 
