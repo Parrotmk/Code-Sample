@@ -9,6 +9,8 @@ Our skill sets include:
 
 >> Google Flutter
 
+>> Firebase
+
 >> Magento
 
 >> Wordpress
