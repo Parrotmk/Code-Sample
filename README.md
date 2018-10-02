@@ -7,6 +7,8 @@ In my case, We provide architectural and custom business solutions that help my 
 
 Our skill sets include: 
 
+>> Google Flutter
+
 >> Magento
 
 >> Wordpress
@@ -30,5 +32,7 @@ Our skill sets include:
 >> Bootstrap
 
 >> MySql
+
+>> RESTFULL APIs
 
 >> Payment gateway (Stripe, Paypal, ANZ, Chargebee etc)
