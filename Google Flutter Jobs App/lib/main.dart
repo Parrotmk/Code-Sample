@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       }
     });
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter - Job App',
       theme: ThemeData(
           primarySwatch: Colors.purple, buttonColor: Colors.limeAccent),
       home: _defaultPage,
