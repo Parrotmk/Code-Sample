@@ -32,7 +32,7 @@ class Employeer_AddjobPageState extends State<Employeer_AddjobPage> {
   
   String _userId;
   
-  static const kGoogleApiKey = "AIzaSyBGYOqmttcHaJwVEV2wISDEAH2HI-qxhG8";
+  static const kGoogleApiKey = "AIzaS1yBGYOqmttcfHaJwVEV2wISDEAH2HI-qxhG8";
   
   // to get places detail (lat/lng)
   GoogleMapsPlaces _places = new GoogleMapsPlaces(kGoogleApiKey);
